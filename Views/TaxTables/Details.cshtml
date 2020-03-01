@@ -1,0 +1,30 @@
+﻿@model Employee_Payee_Tax_Calculator_MVC.Models.TaxTable
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>TaxTable</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TaxCode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TaxCode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TaxPercentage)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TaxPercentage)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index" class="btn btn-primary">Back to List</a>
+</div>
